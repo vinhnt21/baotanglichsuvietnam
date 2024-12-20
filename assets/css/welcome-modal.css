@@ -1,0 +1,40 @@
+.modal-content {
+  background-color: var(--light-bg-main);
+  border: none;
+  border-radius: 15px;
+}
+
+.modal-header {
+  border-bottom: 2px solid var(--light-btn);
+  background-color: var(--light-bg-nav);
+  color: var(--light-text-nav);
+  border-radius: 15px 15px 0 0;
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 2rem;
+  color: var(--light-bg-nav);
+}
+
+.modal-body p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+body.dark-mode .modal-content {
+  background-color: var(--dark-bg-main);
+}
+
+body.dark-mode .modal-header {
+  background-color: var(--dark-bg-nav);
+  border-bottom-color: var(--dark-btn);
+}
+
+body.dark-mode .modal-body {
+  color: var(--dark-text-nav);
+}

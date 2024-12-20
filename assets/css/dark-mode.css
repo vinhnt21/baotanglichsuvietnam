@@ -1,0 +1,63 @@
+body.dark-mode {
+  background-color: var(--dark-bg-main);
+  color: var(--dark-text-nav);
+}
+
+body.dark-mode .navbar {
+  background-color: var(--dark-bg-nav);
+}
+
+body.dark-mode .btn-primary {
+  background-color: var(--dark-btn);
+  border-color: var(--dark-btn);
+}
+
+body.dark-mode .footer {
+  background-color: var(--dark-bg-nav);
+}
+
+body.dark-mode .card {
+  background-color: var(--dark-bg-nav);
+  color: var(--dark-text-nav);
+}
+
+body.dark-mode .btn-nav {
+  background-color: var(--dark-bg-nav);
+  color: var(--dark-text-nav);
+  border-color: var(--dark-bg-nav);
+}
+
+body.dark-mode .event-section {
+  background-color: var(--dark-bg-main);
+  color: var(--dark-text-nav);
+}
+
+body.dark-mode .event-section h2 {
+  color: var(--dark-text-nav);
+}
+
+body.dark-mode .event-section p {
+  color: var(--dark-text-nav);
+}
+
+body.dark-mode .event-section .quote {
+  color: var(--dark-text-nav);
+  border-left-color: var(--dark-btn);
+}
+
+body.dark-mode .event-section .quote footer {
+  color: var(--dark-text-nav);
+  opacity: 0.8;
+}
+
+body.dark-mode .event-section:nth-child(even) {
+  background-color: var(--dark-bg-nav);
+}
+
+body.dark-mode .event-section img {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .figure-text .quote {
+  color: var(--dark-text-nav);
+}

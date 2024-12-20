@@ -1,0 +1,159 @@
+:root {
+  --light-text-nav: #f8ebda;
+  --light-bg-nav: #2d150f;
+  --light-bg-main: #f8ebda;
+  --light-btn: #a3a567;
+
+  --dark-text-nav: #e0e0e0;
+  --dark-bg-nav: #1c1c1c;
+  --dark-bg-main: #121212;
+  --dark-btn: #4e4e4e;
+}
+
+body {
+  background-color: var(--light-bg-main);
+}
+
+.navbar {
+  background-color: var(--light-bg-nav);
+}
+
+.navbar-brand img {
+  transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: var(--light-text-nav) !important;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  height: calc(100vh - 76px);
+}
+.carousel-item {
+  height: calc(100vh - 76px);
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.6);
+}
+
+.carousel-caption {
+  padding: 2rem;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.carousel-title {
+  font-style: italic;
+  font-size: 2.8rem;
+}
+
+.quote {
+  font-style: italic;
+  border-left: 4px solid var(--light-btn);
+  padding-left: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#card-home {
+  height: 150px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: var(--light-bg-nav);
+  color: var(--light-text-nav);
+}
+
+.footer a {
+  color: var(--light-text-nav);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: var(--light-btn);
+  border-color: var(--light-btn);
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-btn);
+  border-color: var(--light-btn);
+  opacity: 0.8;
+}
+
+.btn-nav {
+  background-color: var(--light-bg-nav);
+  color: var(--light-text-nav);
+  border-color: var(--light-bg-nav);
+}
+
+a {
+  color: var(--light-text-nav);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.carousel-title {
+  font-style: italic;
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kháng chiến chống Pháp - Lịch sử Chiến tranh Việt Nam</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/index/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="./assets/css/french-war.css" />
+  </head>
+  <body class="light-mode">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/index/logo.png" alt="Logo" width="100" />
+        </a>
+
+        <button
+          class="navbar-toggler btn-nav"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="french-war.html"
+                >Kháng chiến chống Pháp</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="american-war.html"
+                >Kháng chiến chống Mỹ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="battles.html"
+                >Những trận đánh nổi tiếng</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="figures.html">Các nhân vật lịch sử</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Phản hồi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Câu hỏi trắc nghiệm</a>
+            </li>
+          </ul>
+          <button id="darkModeToggle" class="btn-nav">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner-content text-center">
+          <h1>Kháng chiến chống Pháp</h1>
+          <h2>1945 - 1954</h2>
+          <button class="btn btn-secondary" onclick="scrollToIntro()">
+            Tiếp tục
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>
+              Cuộc đấu tranh của Việt Nam chống lại ách thống trị thực dân Pháp
+            </h2>
+            <h3>
+              Tổng quan về các sự kiện chính trong cuộc kháng chiến chống Pháp
+            </h3>
+            <p class="intro-text">
+              Cuộc kháng chiến chống Pháp, hay còn gọi là Chiến tranh Đông Dương
+              lần thứ nhất, là một giai đoạn quan trọng trong lịch sử Việt Nam.
+              Bắt đầu từ năm 1945, nhân dân Việt Nam đã chiến đấu để chấm dứt
+              hàng thập kỷ thống trị của thực dân Pháp. Cuộc đấu tranh này đã
+              kết thúc bằng chiến thắng vang dội tại Điện Biên Phủ năm 1954,
+              đánh dấu sự chấm dứt của chủ nghĩa thực dân Pháp tại Đông Dương.
+              Dưới đây là tổng quan về các sự kiện quan trọng trong cuộc đấu
+              tranh lịch sử này.
+            </p>
+            <blockquote class="quote">
+              "Chiến thắng Điện Biên Phủ không chỉ là một chiến thắng quân sự mà
+              còn là chiến thắng của ý chí và tinh thần của nhân dân."
+              <footer>- Đại tướng Võ Nguyên Giáp</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4">
+            <img
+              src="./assets/images/french-war/general-giap.jpg"
+              alt="Đại tướng Võ Nguyên Giáp"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('hanoi')">
+              <h4>Trận Hà Nội</h4>
+              <p class="time">19 tháng 12, 1946</p>
+              <p class="description">
+                Việt Minh phát động tấn công chống lại quân Pháp tại Hà Nội,
+                đánh dấu sự khởi đầu của cuộc xung đột toàn diện.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div
+              class="timeline-card"
+              onclick="scrollToEvent('border-campaign')"
+            >
+              <h4>Chiến dịch Biên giới</h4>
+              <p class="time">1950</p>
+              <p class="description">
+                Lực lượng Việt Minh giành thắng lợi, mở ra các tuyến đường tiếp
+                tế quan trọng từ Trung Quốc.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('dien-bien-phu')">
+              <h4>Trận Điện Biên Phủ</h4>
+              <p class="time">13 tháng 3 - 7 tháng 5, 1954</p>
+              <p class="description">
+                Chiến thắng quyết định của Việt Minh trước quân Pháp, chấm dứt
+                ách thống trị của thực dân Pháp tại Việt Nam.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <div
+              class="timeline-card"
+              onclick="scrollToEvent('geneva-accords')"
+            >
+              <h4>Hiệp định Giơnevơ</h4>
+              <p class="time">21 tháng 7, 1954</p>
+              <p class="description">
+                Hiệp định chấm dứt chiến tranh và tạm thời chia cắt Việt Nam tại
+                vĩ tuyến 17.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hanoi" class="event-section py-5">
+      <div class="container">
+        <h2>Trận Hà Nội</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/french-war/battle-hanoi.jpg"
+              alt="Trận Hà Nội"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Trận Hà Nội (19 tháng 12, 1946 – 17 tháng 2, 1947) đánh dấu sự
+              khởi đầu của cuộc kháng chiến chống Pháp. Việt Minh đã phát động
+              một cuộc nổi dậy phối hợp chống lại quân Pháp để kháng cự ách
+              thống trị thực dân. Sử dụng chiến thuật du kích và hệ thống chiến
+              hào phòng thủ, họ đã tấn công các vị trí quan trọng của quân Pháp
+              trên khắp Hà Nội. Mặc dù cuối cùng phải rút lui sau những trận
+              chiến ác liệt, trận Hà Nội đã thể hiện quyết tâm của nhân dân Việt
+              Nam và đặt nền móng cho chiến thắng cuối cùng tại Điện Biên Phủ
+              năm 1954.
+            </p>
+            <blockquote class="quote">
+              "Chúng ta thà hy sinh tất cả chứ không chịu mất nước, không chịu
+              làm nô lệ."
+              <footer>- Chủ tịch Hồ Chí Minh</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="border-campaign" class="event-section py-5">
+      <div class="container">
+        <h2>Chiến dịch Biên giới</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p>
+              Chiến dịch Biên giới năm 1950 là một cuộc tấn công lớn của Việt
+              Minh nhằm giành quyền kiểm soát biên giới phía Bắc với Trung Quốc.
+              Bằng cách chiếm các cứ điểm quan trọng của Pháp như Cao Bằng và
+              Lạng Sơn, Việt Minh đã mở ra các tuyến đường tiếp tế quan trọng
+              cho vũ khí và tài nguyên từ Trung Quốc. Dưới sự chỉ huy của Đại
+              tướng Võ Nguyên Giáp, chiến dịch này đánh dấu chiến thắng quy mô
+              lớn đầu tiên của Việt Minh, thể hiện sức mạnh ngày càng tăng và
+              nâng cao tinh thần cho cuộc đấu tranh chống lại quân Pháp.
+            </p>
+            <blockquote class="quote">
+              "Ngày 9 tháng 9 năm 1950, Chủ tịch Hồ Chí Minh kêu gọi đồng bào ba
+              tỉnh Cao - Bắc - Lạng: 'Đồng bào hãy tiến lên làm gương mẫu cho
+              nhân dân cả nước, giúp chiến dịch giành thắng lợi.'"
+              <footer>- Chủ tịch Hồ Chí Minh</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/french-war/border-campaign.jpg"
+              alt="Chiến dịch Biên giới"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dien-bien-phu" class="event-section py-5">
+      <div class="container">
+        <h2>Trận Điện Biên Phủ</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/french-war/battle-dien-bien-phu.jpg"
+              alt="Trận Điện Biên Phủ"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Trận Điện Biên Phủ (13 tháng 3 – 7 tháng 5, 1954) là trận đánh
+              quyết định chấm dứt Chiến tranh Đông Dương lần thứ nhất. Việt
+              Minh, dưới sự chỉ huy của Đại tướng Võ Nguyên Giáp, đã bao vây và
+              tấn công quân Pháp tại một thung lũng hẻo lánh. Sử dụng các chiến
+              thuật sáng tạo, họ đã vượt qua hỏa lực vượt trội của quân Pháp.
+              Sau 56 ngày chiến đấu ác liệt, quân Pháp đầu hàng, đánh dấu thất
+              bại thảm khốc của Pháp và dẫn đến Hiệp định Giơnevơ, chấm dứt ách
+              thống trị của thực dân Pháp tại Việt Nam.
+            </p>
+            <blockquote class="quote">
+              "Chiến thắng Điện Biên Phủ không chỉ là một chiến thắng quân sự mà
+              còn là chiến thắng của ý chí và tinh thần của nhân dân."
+              <footer>- Đại tướng Võ Nguyên Giáp</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="geneva-accords" class="event-section py-5">
+      <div class="container">
+        <h2>Hiệp định Giơnevơ</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p>
+              Hiệp định Giơnevơ, được ký vào tháng 7 năm 1954, là một loạt các
+              thỏa thuận chấm dứt Chiến tranh Đông Dương lần thứ nhất và đánh
+              dấu sự rút lui của quân Pháp khỏi Việt Nam. Hiệp định tạm thời
+              chia cắt Việt Nam tại vĩ tuyến 17, với miền Bắc dưới sự lãnh đạo
+              của Việt Minh và miền Nam dưới chế độ thân phương Tây. Hiệp định
+              cũng kêu gọi tổ chức tổng tuyển cử vào năm 1956 để thống nhất đất
+              nước, nhưng cuộc bầu cử này không bao giờ được tổ chức. Mặc dù
+              hiệp định nhằm mục đích hòa bình, nhưng nó đã đặt nền móng cho
+              Chiến tranh Việt Nam khi căng thẳng giữa hai miền leo thang thành
+              xung đột toàn diện.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/french-war/geneva-accords.jpg"
+              alt="Hiệp định Giơnevơ"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion" class="py-5">
+      <div class="container">
+        <h2>Di sản của cuộc kháng chiến chống Pháp</h2>
+        <p>
+          Chiến thắng trước ách thống trị thực dân Pháp năm 1954 là một thành
+          tựu to lớn trong lịch sử Việt Nam. Nó đánh dấu sự chấm dứt hơn 80 năm
+          thống trị của thực dân Pháp và đặt nền móng cho sự thống nhất đất
+          nước. Chiến thắng này cũng đóng vai trò quan trọng trong cuộc đấu
+          tranh chống thực dân trên toàn thế giới, truyền cảm hứng cho nhiều
+          quốc gia khác giành độc lập khỏi các cường quốc thực dân.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/images/index/logo.png" alt="Logo" width="200" />
+          </div>
+          <div class="col-md-4">
+            <h5>Liên kết nhanh</h5>
+            <ul class="list-unstyled">
+              <li><a href="french-war.html">Kháng chiến chống Pháp</a></li>
+              <li><a href="american-war.html">Kháng chiến chống Mỹ</a></li>
+              <li><a href="battles.html">Những trận đánh nổi tiếng</a></li>
+              <li><a href="figures.html">Các nhân vật lịch sử</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Liên hệ</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-phone"></i> +84 9****************</li>
+              <li>
+                <i class="fas fa-envelope"></i> c**************142@example.com
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Buôn Ma Thuột, Việt Nam
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/french-war.js"></script>
+  </body>
+</html>

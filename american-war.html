@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kháng chiến chống Mỹ - Lịch sử Chiến tranh Việt Nam</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/index/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="./assets/css/american-war.css" />
+  </head>
+  <body class="light-mode">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/index/logo.png" alt="Logo" width="100" />
+        </a>
+
+        <button
+          class="navbar-toggler btn-nav"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="french-war.html"
+                >Kháng chiến chống Pháp</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="american-war.html"
+                >Kháng chiến chống Mỹ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="battles.html"
+                >Những trận đánh nổi tiếng</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="figures.html"
+                >Các nhân vật lịch sử quan trọng</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Phản hồi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Câu hỏi trắc nghiệm</a>
+            </li>
+          </ul>
+          <button id="darkModeToggle" class="btn-nav">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner-content text-center">
+          <h1>Kháng chiến chống Mỹ</h1>
+          <h2>1954 - 1975</h2>
+          <button class="btn btn-secondary" onclick="scrollToIntro()">
+            Tiếp tục
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2>Cuộc kháng chiến chống sự can thiệp của Mỹ</h2>
+            <h3>Tổng quan về cuộc chiến tranh Việt Nam và các sự kiện chính</h3>
+            <p class="intro-text">
+              Sau khi Việt Nam bị chia cắt vào năm 1954, cuộc đấu tranh thống
+              nhất đất nước trở thành điều tất yếu. Sự can thiệp của Hoa Kỳ đã
+              dẫn đến một cuộc chiến tranh kéo dài. Từ việc thành lập Mặt trận
+              Dân tộc Giải phóng đến cuộc Tổng tiến công Tết Mậu Thân, cuộc
+              kháng chiến chống Mỹ được đánh dấu bởi những cuộc xung đột dữ dội
+              và các động thái chính trị, cuối cùng dẫn đến sự thống nhất của
+              Việt Nam vào năm 1975.
+            </p>
+            <blockquote class="quote">
+              "Chúng ta sẽ chiến đấu cho đến khi không còn một lính Mỹ nào ở
+              Việt Nam."
+              <footer>- Lê Duẩn</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-4">
+            <img
+              src="./assets/images/american-war/intro.jpg"
+              alt="Chiến tranh Việt Nam"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('tet')">
+              <img
+                src="./assets/images/american-war/tet.jpg"
+                alt="Tết Mậu Thân"
+                class="timeline-img"
+                style="border: 5px solid var(--light-bg-nav)"
+              />
+              <h4 class="event-title">Tổng tiến công Tết Mậu Thân</h4>
+              <p class="event-time">30 tháng 1, 1968</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('paris')">
+              <img
+                src="./assets/images/american-war/paris.jpg"
+                alt="Hiệp định Paris"
+                class="timeline-img"
+                style="border: 5px solid var(--light-bg-nav)"
+              />
+              <h4 class="event-title">Hiệp định Paris</h4>
+              <p class="event-time">27 tháng 1, 1973</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="timeline-card" onclick="scrollToEvent('fall-saigon')">
+              <img
+                src="./assets/images/american-war/fall-saigon.jpg"
+                alt="Giải phóng Sài Gòn"
+                class="timeline-img"
+                style="border: 5px solid var(--light-bg-nav)"
+              />
+              <h4 class="event-title">Giải phóng Sài Gòn</h4>
+              <p class="event-time">30 tháng 4, 1975</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tet" class="event-section py-5">
+      <div class="container">
+        <h2>Tổng tiến công Tết Mậu Thân</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/american-war/tet-detail.jpg"
+              alt="Tết Mậu Thân"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Cuộc Tổng tiến công Tết Mậu Thân năm 1968 là một chiến dịch quân
+              sự lớn trong Chiến tranh Việt Nam, do lực lượng Bắc Việt và Mặt
+              trận Dân tộc Giải phóng miền Nam Việt Nam phát động chống lại miền
+              Nam Việt Nam và các đồng minh, bao gồm Hoa Kỳ. Bắt đầu vào ngày 30
+              tháng 1 năm 1968, trong dịp Tết Nguyên Đán, chiến dịch bao gồm các
+              cuộc tấn công phối hợp vào hơn 100 thành phố và căn cứ quân sự.
+              Mặc dù đây là một thất bại chiến thuật đối với miền Bắc do tổn
+              thất nặng nề, nhưng chiến dịch đã gây sốc cho Hoa Kỳ và làm suy
+              yếu đáng kể sự ủng hộ của công chúng Mỹ đối với chiến tranh, đánh
+              dấu một bước ngoặt trong cuộc xung đột.
+            </p>
+            <blockquote class="quote">
+              "Cuộc Tổng tiến công Tết Mậu Thân cho thấy người dân Mỹ rằng chiến
+              tranh ở Việt Nam còn lâu mới kết thúc."
+              <footer>- Đại tướng Võ Nguyên Giáp</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paris" class="event-section py-5">
+      <div class="container">
+        <h2>Hiệp định Paris</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p>
+              Hiệp định Hòa bình Paris, được ký vào ngày 27 tháng 1 năm 1973,
+              nhằm thiết lập hòa bình và chấm dứt Chiến tranh Việt Nam. Hiệp
+              định này bao gồm Hoa Kỳ, Bắc Việt Nam, Nam Việt Nam và Mặt trận
+              Dân tộc Giải phóng miền Nam Việt Nam, kêu gọi ngừng bắn, rút quân
+              đội Hoa Kỳ và trao trả tù binh chiến tranh. Mặc dù tạm thời giảm
+              bớt sự can thiệp trực tiếp của Hoa Kỳ, hiệp định không giải quyết
+              được các căng thẳng cơ bản, dẫn đến sự sụp đổ của Sài Gòn và sự
+              thống nhất của Việt Nam dưới sự lãnh đạo của Đảng Cộng sản vào năm
+              1975.
+            </p>
+            <blockquote class="quote">
+              "Hiệp định đánh dấu một bước ngoặt, nhưng nó không kết thúc chiến
+              tranh."
+              <footer>- Cựu Ngoại trưởng Hoa Kỳ Henry Kissinger</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/american-war/paris-accords.jpg"
+              alt="Hiệp định Paris"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fall-saigon" class="event-section py-5">
+      <div class="container">
+        <h2>Giải phóng Sài Gòn</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/american-war/fall-saigon2.jpg"
+              alt="Giải phóng Sài Gòn 2"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Ngày 30 tháng 4 năm 1975, Sài Gòn được giải phóng, đánh dấu sự kết
+              thúc của Chiến tranh Việt Nam khi lực lượng Bắc Việt chiếm được
+              Sài Gòn, thủ đô của miền Nam Việt Nam. Sự kiện này diễn ra sau
+              Chiến dịch Hồ Chí Minh thành công, làm sụp đổ hoàn toàn phòng
+              tuyến của miền Nam. Sự sụp đổ của Sài Gòn dẫn đến sự tan rã của
+              chính quyền miền Nam và sự thống nhất của Việt Nam dưới sự lãnh
+              đạo của Đảng Cộng sản. Hình ảnh những chiếc trực thăng sơ tán nhân
+              viên Hoa Kỳ và người tị nạn trở thành biểu tượng của sự kết thúc
+              chiến tranh.
+            </p>
+            <blockquote class="quote">
+              "Sài Gòn đã hoàn toàn giải phóng."
+              <footer>- Lực lượng Bắc Việt</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="row align-items-center mt-2">
+          <div class="col-12 d-flex justify-content-center">
+            <img
+              src="./assets/images/american-war/fall-saigon1.jpg"
+              alt="Giải phóng Sài Gòn 1"
+              class="img-fluid rounded mb-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion" class="py-5">
+      <div class="container">
+        <h2>Di sản của cuộc kháng chiến chống Mỹ</h2>
+        <p>
+          Cuộc kháng chiến chống Mỹ kéo dài hai thập kỷ đã có tác động sâu sắc
+          đến Việt Nam và thế giới. Nó dẫn đến sự thống nhất của Việt Nam dưới
+          sự lãnh đạo của Đảng Cộng sản, chấm dứt sự can thiệp quân sự của Hoa
+          Kỳ ở Đông Nam Á và đánh dấu một chương quan trọng trong cuộc đấu tranh
+          chống chủ nghĩa đế quốc toàn cầu. Mặc dù chiến tranh gây ra nhiều đau
+          thương và mất mát, nhưng nó cũng thể hiện tinh thần kiên cường của
+          người dân Việt Nam và quyết tâm giành lại độc lập. Di sản của cuộc
+          chiến được ghi nhớ cả ở Việt Nam và trên thế giới, định hình tương lai
+          của cả hai quốc gia.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/images/index/logo.png" alt="Logo" width="200" />
+          </div>
+          <div class="col-md-4">
+            <h5>Liên kết nhanh</h5>
+            <ul class="list-unstyled">
+              <li><a href="french-war.html">Kháng chiến chống Pháp</a></li>
+              <li><a href="american-war.html">Kháng chiến chống Mỹ</a></li>
+              <li><a href="battles.html">Những trận đánh nổi tiếng</a></li>
+              <li>
+                <a href="figures.html">Các nhân vật lịch sử quan trọng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Liên hệ</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-phone"></i> +84 9****************</li>
+              <li>
+                <i class="fas fa-envelope"></i> c**************142@example.com
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Buôn Ma Thuột, Việt Nam
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/american-war.js"></script>
+  </body>
+</html>
